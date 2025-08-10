@@ -1,7 +1,7 @@
 // =============================================================================
 // 1. إعدادات وتأسيس
 // =============================================================================
-require('dotenv').config({ path: './1.env' }); // <-- تم التعديل هنا ليقرأ الملف بالاسم الجديد
+require('dotenv').config(); // <-- تم التعديل هنا ليقرأ الملف بالاسم الجديد
 const TelegramBot = require('node-telegram-bot-api');
 const express = require('express');
 const bodyParser = require('body-parser');
@@ -553,3 +553,4 @@ console.log(`Webhook successfully set to ${fullWebhookUrl}`);
 console.error("Error setting webhook:", error.message);
 }
 });
+
